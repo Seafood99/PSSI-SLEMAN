@@ -238,6 +238,8 @@ select {
   position: relative;
   display: flex;
   flex: 0 0 auto;
+  padding-bottom: 8px;
+  margin-bottom: -8px;
 }
 
 .nav-dropdown > a {
@@ -257,7 +259,7 @@ select {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   right: 0;
   z-index: 20;
   display: grid;
