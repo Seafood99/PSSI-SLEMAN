@@ -10,7 +10,7 @@
   <title>Berita | PSSI Sleman</title>
 </svelte:head>
 
-<SiteHeader active="berita" query={data.query} />
+<SiteHeader active="berita" />
 
 <main class="site-shell page-shell">
   <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -24,6 +24,16 @@
     <h1>Berita PSSI Sleman</h1>
     <span>{data.items.length} artikel ditemukan</span>
   </section>
+
+  <form class="page-search" action="/berita" method="GET">
+    <input
+      name="q"
+      aria-label="Cari berita"
+      placeholder="Cari berita, seri, jadwal, atau pembinaan"
+      value={data.query}
+    />
+    <button aria-label="Cari berita">Cari</button>
+  </form>
 
   <div class="content-grid">
     <section class="listing-column">
