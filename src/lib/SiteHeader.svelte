@@ -34,11 +34,15 @@
   <nav class="primary-nav" aria-label="Navigasi utama">
     <a class:active={active === 'home'} href="/">Home</a>
     <a class:active={active === 'berita'} href="/berita">Berita</a>
-    <a class:active={active === 'kompetisi'} href="/kompetisi">Kompetisi</a>
-    <a href="/kompetisi?seri=seri-a">Seri A</a>
-    <a href="/kompetisi?seri=seri-b">Seri B</a>
-    <a href="/kompetisi?seri=seri-c">Seri C</a>
-    <a href="/kompetisi?seri=seri-d">Seri D</a>
+    <div class="nav-dropdown">
+      <a class:active={active === 'kompetisi'} href="/kompetisi">Kompetisi</a>
+      <div class="dropdown-menu" aria-label="Daftar seri kompetisi">
+        <a href="/kompetisi?seri=seri-a">Seri A</a>
+        <a href="/kompetisi?seri=seri-b">Seri B</a>
+        <a href="/kompetisi?seri=seri-c">Seri C</a>
+        <a href="/kompetisi?seri=seri-d">Seri D</a>
+      </div>
+    </div>
     <a href="/kompetisi#jadwal">Jadwal</a>
     <a href="/kompetisi#klasemen">Klasemen</a>
   </nav>
@@ -47,8 +51,8 @@
     <a href="/berita">Terbaru</a>
     <a href="/kompetisi#jadwal">Jadwal Pertandingan</a>
     <a href="/kompetisi#klasemen">Klasemen Liga</a>
-    <a href="/berita?q=Seri+A">Seri A</a>
-    <a href="/berita?q=Seri+B">Seri B</a>
-    <a href="/berita?q=Seri+D">Pembinaan</a>
+    <a href="/berita?q=Kompetisi">Kompetisi</a>
+    <a href="/berita?q=Jadwal">Info Jadwal</a>
+    <a href="/berita?q=Pembinaan">Pembinaan</a>
   </nav>
 </div>
